@@ -2,11 +2,6 @@ const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
-
-
-
-
-
 function setDate() {
     const now = new Date();
 
@@ -48,7 +43,7 @@ function digitClock() {
     const newH = hours >= 10 ? hours : `0${hours}`;
     const newM = minutes >= 10 ? minutes : `0${minutes}`;
     const newS = seconds >= 10 ? seconds : `0${seconds}`;
-    digitFace.innerHTML = `현재 시각 ${newH} : ${newM} : ${newS}`;
+    digitFace.innerHTML = `${newH} : ${newM} : ${newS}`;
     console.log(digitFace);
 };
 
